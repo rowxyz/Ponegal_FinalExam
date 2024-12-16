@@ -7,7 +7,7 @@ public class FinalExam {
         String name;
         int power;
 
-        // Constructors to initialize a creatures' name and power level
+        // Constructors to initialize a creature's name and power level
         Creature(String name, int power) {
             this.name = name;
             this.power = power;
@@ -68,7 +68,7 @@ public class FinalExam {
     }
 
     public static void main(String[] args) {
-        // Initial data: List of creatures and their power levels
+        // List of creatures and their power levels
         Creature[] creatures = {
             new Creature("Dragon", 95),
             new Creature("Phoenix", 92),
@@ -80,6 +80,7 @@ public class FinalExam {
 
         // Bubble Sort: Descending Order
         bubbleSortDescending(creatures);
+        // Display the sorted list
         System.out.println("\n*** Bubble Sort: Descending Order by Power Level ***");
         for (Creature creature : creatures) {
             System.out.println(creature);
